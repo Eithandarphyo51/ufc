@@ -26,7 +26,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းသည် လူ့အခွင့် အရေး ကြေညာစာတမ်းတွင် ဖော်ပြထားသည့် အခွင့်အရေး အားလုံး၊ လွတ်လပ်ခွင့် အားလုံးတို့ကို ပိုင်ဆိုင် ခံစားခွင့်ရှိသည်။ လူမျိုးနွယ်အားဖြင့် ဖြစ်စေ၊ အသားအရောင်အားဖြင့် ဖြစ်စေ၊ ကျား၊ မ၊ သဘာဝအားဖြင့် ဖြစ်စေ၊ ဘာသာစကားအားဖြင့် ဖြစ်စေ၊ ကိုးကွယ်သည့် ဘာသာအားဖြင့် ဖြစ်စေ၊ နိုင်ငံရေးယူဆချက်၊ သို့တည်းမဟုတ် အခြားယူဆချက်အားဖြင့် ဖြစ်စေ၊ နိုင်ငံနှင့် ဆိုင်သော၊ သို့တည်းမဟုတ် လူမှုအဆင့်အတန်းနှင့် ဆိုင်သော ဇစ်မြစ် အားဖြင့်ဖြစ်စေ၊ ပစ္စည်း ဥစ္စာ ဂုဏ်အားဖြင့် ဖြစ်စေ၊ မျိုးရိုးဇာတိအားဖြင့် ဖြစ်စေ၊ အခြား အဆင့်အတန်း အားဖြင့် ဖြစ်စေ ခွဲခြားခြင်းမရှိစေရ။ ထို့ပြင် လူတစ်ဦး တစ်ယောက် နေထိုင်ရာ နိုင်ငံ၏ သို့တည်းမဟုတ် နယ်မြေဒေသ၏ နိုင်ငံရေးဆိုင်ရာ ဖြစ်စေ စီရင်ပိုင်ခွင့်ဆိုင်ရာ ဖြစ်စေ တိုင်းပြည် အချင်းချင်း ဆိုင်ရာဖြစ်စေ၊ အဆင့်အတန်း တစ်ခုခုကို အခြေပြု၍ သော်လည်းကောင်း၊ ဒေသနယ်မြေတစ်ခုသည် အချုပ်အခြာ အာဏာပိုင် လွတ်လပ်သည့် နယ်မြေ၊ သို့တည်းမဟုတ် ကုလသမဂ္ဂ ထိန်းသိမ်း စောင့်ရှောက် ထားရသည့် နယ်မြေ၊ သို့တည်းမဟုတ် ကိုယ်ပိုင် အုပ်ချုပ်ခွင့် အာဏာတို့ တစိတ်တဒေသလောက်သာ ရရှိသည့် နယ်မြေ စသဖြင့် ယင်းသို့ သော နယ်မြေများ ဖြစ်သည် ဟူသော အကြောင်းကို အထောက်အထား ပြု၍ သော်လည်းကောင်း ခွဲခြားခြင်း လုံးဝ မရှိစေရ။'''
 
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article two")
 
 if __name__ == "__main__":
     unittest.main()
@@ -40,7 +40,7 @@ class TestZG2UNI(unittest.TestCase):
 လဴတိုင်း၌ အသက်ရှင်ရန် လွတ်လပ်မှုခွင့်နှင့် လုံခြုံစိတ်ချခွင့် ရှိသည်။'''
 
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article three")
 
 if __name__ == "__main__":
     unittest.main()
@@ -53,7 +53,7 @@ class TestZG2UNI(unittest.TestCase):
         unicode = u''' အပိုဒ် ၄
 မည်သူကိုမျှ ကျေးကျွန်အဖြစ်၊ သို့တည်းမဟုတ် အစေအပါးအဖြစ်၊ နိုင်ထက်စီးနင်း စေခိုင်းခြင်း မပြုရ၊ လူကို ကျေးကျွန်သဖွယ် အဓမ္မ စေခိုင်းခြင်း၊ အရောင်းအဝယ် ပြုခြင်းနှင့် ထိုသဘော သက်ရောက်သော လုပ်ငန်းဟူသမျှကို ပိတ်ပင် တားမြစ် ရမည်။ '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article four")
 
 if __name__ == "__main__":
     unittest.main()
@@ -67,7 +67,7 @@ class TestZG2UNI(unittest.TestCase):
 မည်သူကိုမျှ ညှဉ်းပန်း နှိပ်စက်ခြင်း၊ သို့တည်းမဟုတ် ရက်စက်ကြမ်းကြုတ်စွာ လူမဆန်စွာ ဂုဏ်ငယ်စေသော ဆက်ဆံမှု မပြုရ၊ သို့တည်းမဟုတ် အပြစ်ဒဏ် ပေးခြင်းမပြုရ။ '''
 
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article five")
 
 if __name__ == "__main__":
     unittest.main()
@@ -82,7 +82,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် ဥပဒေအရာ၌ လူပုဂ္ဂိုလ်တစ်ဦး အဖြစ်ဖြင့် အရာခပ်သိမ်းတွင် အသိအမှတ် ပြုခြင်းကို ခံယူပိုင်ခွင့်ရှိသည်။'''
 
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article six")
 
 if __name__ == "__main__":
     unittest.main()
@@ -94,7 +94,7 @@ class TestZG2UNI(unittest.TestCase):
         unicode = u''' အပိုဒ် ၇
 လူအားလုံးတို့သည် ဥပဒေအရာ၌ တူညီကြသည့်အပြင်၊ ဥပဒေ၏ အကာအကွယ်ကို ခြားနားခြင်း မခံရစေဘဲ တူညီစွာ ခံစားပိုင်ခွင့်ရှိသည်။ ဤကြေညာ စာတမ်းပါ သဘောတရားများကို ဖီဆန်၍ ခွဲခြားခြင်းမှ လည်းကောင်း၊ ထိုသို့ခွဲခြားခြင်းကို လှုံ့ဆော်ခြင်းမှ လည်းကောင်း၊ ကင်းလွတ် စေရန် အကာအကွယ်ကို တူညီစွာ ခံစားပိုင်ခွင့် ရှိသည်။'''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article seven")
 
 if __name__ == "__main__":
     unittest.main()
@@ -107,7 +107,7 @@ class TestZG2UNI(unittest.TestCase):
 ဖွဲ့စည်းပုံ အခြေခံဥပဒေက သော်လည်းကောင်း အခြား ဥပဒေက သော်လည်းကောင်း လူတိုင်းအတွက် ပေးထားသည့် အခြေခံ အခွင့်အရေး များသည် ချိုးဖောက် ဖျက်ဆီးခြင်းခံခဲ့ရလျှင် ထိုသို့ ချိုးဖောက်ဖျက်ဆီး သော ပြုလုပ်မှုကြောင့် ဖြစ်ပေါ်လာသော နစ်နာချက် အတွက် ထိုသူသည် နိုင်ငံဆိုင်ရာ အာဏာပိုင်တရားရုံးတွင် ထိရောက်စွာ သက်သာခွင့် ရှိနိုင်စေရမည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article eight")
 
 if __name__ == "__main__":
     unittest.main()
@@ -121,7 +121,7 @@ class TestZG2UNI(unittest.TestCase):
 မည်သူမျှ ဥပဒေအရ မဟုတ်သော ဖမ်းဆီးခြင်းကို ဖြစ်စေ၊ ချုပ်နှောင်ခြင်းကို ဖြစ်စေ၊ ပြည်နှင်ခြင်းကိုဖြစ်စေ မခံစေရ။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article nine")
 
 if __name__ == "__main__":
     unittest.main()
@@ -135,7 +135,7 @@ class TestZG2UNI(unittest.TestCase):
 အခွင့်အရေးများနှင့် တာဝန် ဝတ္တရားများကို အဆုံးအဖြတ်ခံရာတွင် လည်းကောင်း၊ ပြစ်မှုကြောင့် တရားစွဲဆို စီရင် ဆုံးဖြတ်ခံရာတွင် လည်းကောင်း၊ လူတိုင်းသည် လွတ်လပ်၍ ဘက်မလိုက်သော တရားရုံးတော်၏ လူအများ ရှေ့မှောက်တွင် မျှတစွာ ကြားနာစစ်ဆေးခြင်းကို တူညီစွာ ခံစား ပိုင်ခွင့်ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article ten")
 
 if __name__ == "__main__":
     unittest.main()
@@ -151,7 +151,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတစ်ဦးတစ်ယောက်အား နိုင်ငံဥပဒေအရဖြစ်စေ၊ အပြည်ပြည်ဆိုင်ရာ ဥပဒေအရ ဖြစ်စေ၊ ပြစ်မှုမမြောက်သော လုပ်ရပ် သို့မဟုတ် ပျက်ကွက်မှုအရ ဆွဲဆိုပြစ်ပေးခြင်း မပြုရ။ ထို့အပြင် ပြစ်မှုကျူးလွန်စဉ်အခါက ထိုက်သင့်စေနိုင်သော အပြစ်ဒဏ်ထက်ပိုမိုကြီးလေးသော အပြစ်ဒဏ်ကို ထိုက်သင့်ခြင်းမရှိစေရ။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article eleven")
 
 if __name__ == "__main__":
     unittest.main()
@@ -165,7 +165,7 @@ class TestZG2UNI(unittest.TestCase):
 မည်သူမျှ မိမိသဘောအတိုင်း အေးချမ်းလွတ်လပ်စွာ နေထိုင်ခြင်းကို သော်လည်းကောင်း၊ မိမိ၏ မိသားစုကို သော်လည်းကောင်း၊ မိမိ၏ နေအိမ် အသိုက်အဝန်းကို သော်လည်းကောင်း၊ စာပေးစာယူကို သော်လည်းကောင်း၊ ဥပဒေအရ မဟုတ်သော ဝင်ရောက် စွက်ဖက်ခြင်း မခံစေရ။ ထို့ပြင် မိမိ၏ဂုဏ်သိက္ခာ ကိုလည်း အထက်ပါ အတိုင်း ပုတ်ခတ်ခြင်း မခံစေရ။ လူတိုင်းတွင် ထိုသို့ ဝင်ရောက်စွက်ဖက်ခြင်းမှ သော်လည်းကောင်း ပုတ်ခတ်ခြင်းမှ သော်လည်းကောင်း ဥပဒေအရ ကာကွယ် ပိုင်ခွင့်ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twelve")
 
 if __name__ == "__main__":
     unittest.main()
@@ -181,7 +181,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် မိမိနေထိုင်ရာ တိုင်းပြည်မှ လည်းကောင်း၊ အခြားတိုင်းပြည်မှလည်းကောင်း ထွက်ခွာ သွားပိုင်ခွင့်ရှိသည့်အပြင်၊မိမိ၏ တိုင်းပြည်သို့ ပြန်လာ ပိုင်ခွင့်လည်းရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article thirteen")
 
 if __name__ == "__main__":
     unittest.main()
@@ -197,7 +197,7 @@ class TestZG2UNI(unittest.TestCase):
 နိုင်ငံရေးနှင့် မပတ်သက်သည့် ပြစ်မှုများမှ သော်လည်းကောင်း၊ ကုလသမဂ္ဂ၏ ရည်ရွက်ချက်နှင့် သဘောတရား မှုများကို ဖီဆန်သော အမှုများမှ သော်လညး်ကောင်း၊ အမှန် ပေါ်ပေါက် လာသော ပြစ်မှုကြောင့် တရားစွဲဆိုခြင်း ခံရသည့် အမှုအခင်းများတွင် အထက်ပါ အခွင့်အရေးကို အသုံးမပြုနိုင်စေရ။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article fourteen")
 
 if __name__ == "__main__":
     unittest.main()
@@ -213,7 +213,7 @@ class TestZG2UNI(unittest.TestCase):
 ဥပဒေအရ မဟုတ်လျှင် မည်သူမျှ မိမိ၏ နိုင်ငံသားအဖြစ်ကို စွန့်လွှတ်ခြင်း မခံစေရ၊ နိုင်ငံသားအဖြစ် ပြောင်းလဲနိုင်သောအခွင့်အရေးကို လည်း ငြင်းပယ်ခြင်း မခံစေရ။
  '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article fiveteen")
 
 if __name__ == "__main__":
     unittest.main()
@@ -231,7 +231,7 @@ class TestZG2UNI(unittest.TestCase):
 မိသားစု တစ်ခုသည် လူ့အဖွဲ့အစည်း၏ သဘာ၀ကျသော အခြေခံအဖွဲ့တစ်ရပ်ဖြစ်သည်၊ ထိုမိသားစုသည် လူ့ အဖွဲ့အစည်းနှင့် အစိုးရတို့၏ ကာကွယ်စောင့်ရှောက်ခြင်းကို ခံယူခွင့်ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article sixteen")
 
 if __name__ == "__main__":
     unittest.main()
@@ -245,7 +245,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် မိမိ တစ်ဦးချင်းသော်လည်းကောင်း ၊ အခြားသူများနှင့် ဖက်စပ်၍ သော်လည်းကောင်း၊ ပစ္စည်းဥစ္စာ တို့ကို ပိုင်ဆိုင်ရန် အခွင့်အရေးရှိရမည်။ ဥပဒေအရ မဟုတ်လျှင်၊ မည်သူမျှ မိမိ၏ပစ္စည်းဥစ္စာပိုင်ဆိုင်ခွင့်ကို စွန့်လွှတ်ခြင်း မခံစေရ။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article seventeen")
 
 if __name__ == "__main__":
     unittest.main()
@@ -259,7 +259,7 @@ class TestZG2UNI(unittest.TestCase):
 လဴတိုင်းတွင် လွတ်လပ်စွာ တွေးခေၚ ကြံဆနိုင်ခွင့်၊ လွတ်လပ်စွာ ခံယဴရပ်တည်နိုင်ခွင့် နှင့် လွတ်လပ်စွာ သက်ဝင် ကိုးကွယ်နိုင်ခွင့်ရှိသည်။ အဆိုပါ အခွင့်အရေးများ၌ မိမိကိုးကွယ်သည့် ဘာသာကို သို႔တည်းမဟုတ် သက်ဝင်ယုံကြည်ချက်ကို လွတ်လပ်စွာ ပြောင်းလဲနိုင်ခွင့် ပါဝင်သည့် အပြင် မိမိ တစ်ယောက်ချင်းဖြစ်စေ၊ အခြားသဴများနှင့် စုပေါင်း၍ဖြစ်စေ၊ ပြည်သဴအများ ရှေ႕မှောက်တွင် သော်လည်းကောင်း၊ ရှေ႕မှောက်တွင် မဟုတ်ဘဲ သော်လည်းကောင်း၊ မိမိ ကိုးကွယ်သော ဘာသာကို သို႔တည်းမဟုတ် သက်ဝင် ယုံကြည်ချက်ကို လွတ်လပ် စွာ သင်ပြနိုင်ခွင့်၊ ကျင့်သုံးနိုင်ခွင့်၊ ဝတ်ပြုကိုးကွယ်နိုင်ခွင့်နှင့် ဆောက်တည် နိုင်ခွင့်တို႔လည်း ပါဝင်သည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article eighteen")
 
 if __name__ == "__main__":
     unittest.main()
@@ -273,7 +273,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် လွတ်လပ်စွာ ထင်မြင် ယူဆနိုင်ခွင့်နှင့် လွတ်လပ်စွာ ဖွင့်ဟ ဖော်ပြနိုင်ခွင့်ရှိသည်။ အဆိုပါ အခွင့်အရေးများ၌ အနှောင့် အယှက်မရှိဘဲ လွတ်လပ်စွာ ထင်မြင်ယူဆနိုင်ခွင့် ပါဝင် သည့်အပြင်၊ နိုင်ငံနယ်နိမိတ်များကို ထောက်ထားရန် မလိုဘဲ သတင်းအကြောင်းအရာနှင့် သဘောတရားများကို တနည်းနည်း ဖြင့် လွတ်လပ်စွာ ရှာယူဆည်းပူးနိုင်ခွင့်၊ လက်ခံနိုင်ခွင့်နှင့် ဝေငှ ဖြန့်ချိခွင့်တို့လည်း ပါဝင်သည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article nineteen")
 if __name__ == "__main__":
     unittest.main()
 
@@ -288,7 +288,7 @@ class TestZG2UNI(unittest.TestCase):
 မည်သူ့ကိုမျှ အဖွဲ့အစည်းတစ်ခုသို့ ဝင်စေရန် အတင်းအကျပ်မပြုရ။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twenty")
 if __name__ == "__main__":
     unittest.main()
 
@@ -305,7 +305,7 @@ class TestZG2UNI(unittest.TestCase):
 ပြည်သူပြည်သားတို့၏ ဆန္ဒသည် အုပ်ချုပ် အာဏာ၏ အခြေခံဖြစ်ရမည်၊ အဆိုပါ ဆန္ဒကို အချိန်ကာလပိုင်းခြားလျက် စစ်မှန်သောရွေးကောက်ပွဲများဖြင့် ထင်ရှားစေရမည်။ ရွေးကောက် ပွဲများတွင်လည်း လူတိုင်းအညီအမျှ ဆန္ဒမဲ ပေးနိုင်ခွင့် ရှိရမည့်အပြင် ၊ ထိုရွေးကောက်ပွဲများကို လျှို့ဝှက် မဲပေး စနစ်ဖြင့် ဖြစ်စေ၊ အလားတူ လွတ်လပ်သော မဲပေးစနစ် ဖြင့်ဖြစ်စေ ကျင်းပရမည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentyone")
 if __name__ == "__main__":
     unittest.main()
 
@@ -318,7 +318,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် လူ့အဖွဲ့အစည်း၏ အဖွဲ့ဝင်တစ်ဦးအနေနှင့် လူမှုရေးလုံခြုံခွင့်ရယူပိုင့်ခွင့်ရှိသည့် အပြင်နိုင်ငံရေး ကြိုးပမ်းမှုဖြင့်ဖြစ်စေ၊ နိုင်ငံတကာ ပူပေါင်းဆောင်ရွက်မှုဖြင့်ဖြစ်စေ၊ နိုင်ငံအသီးသီး၏ဖွဲ့စည်းပုံနှင့် လည်းကောင်း၊ သယံဇာတ အင်အားနှင့်လည်းကောင်း ထိုလူ၏ ဂုဏ်သိက္ခာနှင့် စရိုက်လက္ခဏာ လွတ်လပ်စွာ တိုးတက်မြင့်မားရေးအတွက် မရှိမဖြစ်လိုအပ်သော စီးပွားရေး၊လူမှုရေးနှင့် ယဉ်ကျေးမှု အခွင့်အရေးများကို သုံးစွဲပိုင်ခွင့်ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentytwo")
 if __name__ == "__main__":
     unittest.main()
 
@@ -337,7 +337,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် မိမိအကျိုး ခံစားခွင့်ကို ကာကွယ်ရန် အလုပ်သမား အစည်းအရုံးများ ဖွဲ့စည်းခွင့် ၊ ပါဝင် ဆောင်ရွက်ခွင့် ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentythree")
 if __name__ == "__main__":
     unittest.main()
 
@@ -350,7 +350,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် သင့်မြတ်လျော်ကန်စွာ ကန့်သတ်ထားသည့် အလုပ်လုပ်ချိန် အပြင်၊ လစာနှင့်တကွ အခါကာလအားလျော်စွာ သတ်မှတ် ထားသည့် အလုပ် အားလပ်ရက်များပါဝင်သည့် အနားယူခွင့်နှင့် အားလပ်ခွင့် ခံစားပိုင်ခွင့် ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentyfour")
 if __name__ == "__main__":
     unittest.main()
 
@@ -365,7 +365,7 @@ class TestZG2UNI(unittest.TestCase):
 သားသည် မိခင်များနှင့် ကလေးများသည် အထူးစောင့်ရှောက်ခြင်းနှင့် အကူအညီပေးခြင်းကို ရခွင့် ရှိသည်။ ဥပဒေအရ ထိမ်းမြားခြင်းဖြင့်ဖြစ်စေ အခြား နည်းဖြင့် ဖြစ်စေ မွေးဖွားသော ကလေးအားလုံး သည် တူညီသော လူမှု ကာကွယ် စောင့်ရှောက်ရေးကို ရယူ ခံစားကြရမည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentyfive")
 if __name__ == "__main__":
     unittest.main()
 
@@ -382,7 +382,7 @@ class TestZG2UNI(unittest.TestCase):
 မိဘတို့တွင်၊ မိမိတို့၏ ကလေးများ သင်ယူရမည့်ပညာ အမျိုးအစားကို ရွေးချယ်နိုင်သော လက်ဦး အခွင့်အရေးရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentysix")
 if __name__ == "__main__":
     unittest.main()
 
@@ -397,7 +397,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းတွင် သိပ္ပံမှ ဖြစ်စေ၊ စာပေမှဖြစ်စေ၊ သုခုမပညာမှ ဖြစ်စေ၊ မိမိကိုယ်ပိုင်ဉာဏ်ဖြင့်ကြံစည် ဖန်တီးမှုမှ ဖြစ်ထွန်းလာသည့် ဂုဏ်နှင့် ငွေကြေး အကျိုးအမြတ်များကို ခံစားရယူနိုင်ရန် အခွင့်အရေး အတွက် ကာကွယ်မှုကို ရရှိရန် အခွင့်အရေး ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentyseven")
 if __name__ == "__main__":
     unittest.main()
 
@@ -410,7 +410,7 @@ class TestZG2UNI(unittest.TestCase):
 လူတိုင်းသည် ဤကြေညာ စာတမ်းတွင် ဖော်ပြထားသည့် အခွင့်အရေးများ နှင့် လွတ်လပ်ခွင့်များကို အပြည့်အစုံ ရယူနိုင်သော လူမှု ဆက်ဆံရေး အခြေအနေနှင့် အပြည်ပြည်ဆိုင်ရာ ဆက်ဆံရေး အခြေအနေတို့၏ အကျိုးကျေးဇူးကို ခံစားနိုင်ခွင့် ရှိသည်။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentyeight")
 if __name__ == "__main__":
     unittest.main()
 
@@ -427,7 +427,7 @@ class TestZG2UNI(unittest.TestCase):
 အဆိုပါ အခွင့်အရေးများနှင့် လွတ်လပ် ခွင့်များကို မည်သည့် အမှုကိစ္စတွင်မျှ ကုလသမဂ္ဂ၏ ရည်ရွယ်ချက်များနှင့်လည်းကောင်း၊ အခြေခံမူများနှင့် လည်းကောင်း ဆန့်ကျင်၍ မသုံးစွဲရ။
 '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article twentynine")
 if __name__ == "__main__":
     unittest.main()
 
@@ -438,6 +438,6 @@ class TestZG2UNI(unittest.TestCase):
         unicode = u'''အပိုဒ် ၃ဝ
 ဤကြေညာစာတမ်းပါ အခွင့်အရေးနှင့်တကွ လွတ်လပ်ခွင့်များ ပျက်စီးရာပျက်စီးကြောင်းတို့ကိုရည်ရွယ်၍၊ နိုင်ငံတစ်နိုင်ငံ အတွက် ဖြစ်စေ၊ လူတစ်စုအတွက် ဖြစ်စေ၊ လူတစ်ဦးတစ်ယောက် အတွက် ဖြစ်စေ ပါဝင် ဆောင်ရွက်ရန် အခွင့်ရှိသည်ဟု သော်လည်းကောင်း၊ ကိုယ်တိုင်ဆောင်ရွက်ရန် အခွင့်ရှိသည် ဟုသော်လည်းကောင်းအဓိပ္ပါယ် ပိုင်းခြားကောက်ယူခြင်း မရှိစေရ။ '''
         result = zg2uni.convert(zawgyi)
-        self.assertEqual(unicode, result, "Failed converting Article One")
+        self.assertEqual(unicode, result, "Failed converting Article thirty")
 if __name__ == "__main__":
     unittest.main()
