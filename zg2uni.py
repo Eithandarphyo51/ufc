@@ -32,10 +32,10 @@ def decompose(input):
     output = input
 
     #ngasint
-    output = re.sub(u'([u1000-u1021])\u1064', u'\u1064\\1', output)
-    output = re.sub(u'([u1000-u1021])\u108B', u'\u1064\\1\u102D', output)
-    output = re.sub(u'([u1000-u1021])\u108c', u'\u1064\\1\u102E', output)
-    output = re.sub(u'([u1000-u1021])\u108D', u'\u1064\\1\u1036', output)
+    output = re.sub(u'([\u1000-\u1021])(\u1064)', u'\u1064\\1', output)
+    output = re.sub(u'([\u1000-\u1021])(\u108B)', u'\u1064\\1\u102D', output)
+    output = re.sub(u'([\u1000-\u1021])(\u108c)', u'\u1064\\1\u102E', output)
+    output = re.sub(u'([\u1000-\u1021])(\u108D)', u'\u1064\\1\u1036', output)
     output = re.sub(u'\u108E', u'\u102D\u1036', output)
     output = re.sub(u'\u1064', u'\u1004\u103A\u1039', output)
 
@@ -79,12 +79,12 @@ def visual2logical(input):
 
     output = input
     # reorder yayit to CMV format
-    output = re.sub(u'(\u103C)([\u1000-\u1021])', u'\\2\\1', output)
+    output = re.sub(u'(\u103C)([\u1000-\u1021])', u'\2\\1', output)
     # reorder thawayhtoo
-    output = re.sub(u'(\u1031)([\u1000-\u1021])', u'\\1\u1031', output)
-    output = re.sub(u'(\u1031)([\u103B-\u103E\+])', u'\\1\u1031', output)
-    output = re.sub(u'(\u102F)(\u102D\u102E])', u'\\2\\1', output)
-    output = re.sub(u'(\u1030)(\u102D\u102E])', u'\\2\\1', output)
+    output = re.sub(u'(\u1031)([\u1000-\u1021])', u'\1\\u1031', output)
+    output = re.sub(u'(\u1031)([\u103B-\u103E\+])', u'\1\\u1031', output)
+    output = re.sub(u'(\u102F)(\u102D\u102E])', u'\2\\1', output)
+    output = re.sub(u'(\u1030)(\u102D\u102E])', u'\2\\1', output)
 
     return output
 
