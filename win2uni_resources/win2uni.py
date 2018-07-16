@@ -78,8 +78,50 @@ def replace(input):
 
     return output
 
+
+def decompose(input):
+    # decomposed combined characters to sequenced characters
+
+    output = input
+
+    output = re.sub(u'\u003a', u'\u102b\u103a', output)  # yaycharshaehtoe
+    output = re.sub(u'[\u003c\u003e]', u'\u103c\u103d', output)  # yayitwaswe
+    output = re.sub(u'\u0040', u'\u100f\u1039\u100d', output)  # nagyihtawenbaesint
+    output = re.sub(u'\u0049', u'\u103e\u102f', output)  # hatoe1chaungngin
+    output = re.sub(u'\u0052', u'\u103b\u103d', output)  # yapintwaswe
+    output = re.sub(u'\u0054', u'\u103d\u103e', output)  # waswehatoe
+    output = re.sub(u'\u0057', u'\u103b\u103d\u103e', output)  # yapintwaswehatoe
+    
+    # patsint
+    output = re.sub(u'\u00FA', u'\u1039\u1000', output)  # kasint
+    output = re.sub(u'\u00A9', u'\u1039\u1001', output)  # khasint
+    output = re.sub(u'\u00BE', u'\u1039\u1002', output)  # gasint
+    output = re.sub(u'\u00A2', u'\u1039\u1003', output)  # gagyisint
+    output = re.sub(u'\u00F6', u'\u1039\u1005', output)  # sasint
+    output = re.sub(u'\u00E4', u'\u1039\u1006', output)  # salainsint
+    output = re.sub(u'\u00D1', u'\u1039\u1008', output)  # zamyinzwesint
+    output = re.sub(u'\u00B3', u'\u1039\u100B', output)  # tatalingyakesint
+    output = re.sub(u'\u00B2', u'\u1039\u100C', output)  # htatwinbaesint
+    output = re.sub(u'\u00D6', u'\u1039\u100F', output)  # nagyisint
+    output = re.sub(u'\u00C5', u'\u1039\u1010', output)  # tasint
+    output = re.sub(u'\u00AC', u'\u1039\u1011', output)  # htasint
+    output = re.sub(u'\u00B4', u'\u1039\u1012', output)  # dasint
+    output = re.sub(u'\u00A8', u'\u1039\u1013', output)  # daautchintsint
+    output = re.sub(u'\u00E9', u'\u1039\u1014', output)  # nasint
+    output = re.sub(u'\u00DC', u'\u1039\u1015', output)  # pasint
+    output = re.sub(u'\u00E6', u'\u1039\u1016', output)  # phasint
+    output = re.sub(u'\u00C1', u'\u1039\u1017', output)  # bahtetchintsint
+    output = re.sub(u'\u00C7', u'\u1039\u1018', output)  # bakonesint
+    output = re.sub(u'\u00AE', u'\u1039\u1019', output)  # masint
+    output = re.sub(u'\u2019', u'\u1039\u101C', output)  # lasint
+    output = re.sub(u'\u00D7', u'\u100D\u1039\u100D', output)  # tata-2lonesint
+
+    return output
+
+
 def convert(input):
     
     output = replace(input)
+    output = decompose(output)
         
     return output
