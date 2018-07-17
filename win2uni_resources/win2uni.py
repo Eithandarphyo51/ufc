@@ -13,8 +13,8 @@ def replace(input):
     output = output.replace(u'\u0070', u'\u1005') #salone
     output = output.replace(u'\u0071', u'\u1006') #salane
     output = output.replace(u'\u005A', u'\u1007') #zakwe
-    output = output.replace(u'\u006E', u'\u100A') #nya
-    output = output.replace(u'\u00F1', u'\u100A') #nya
+    output = output.replace(u'\u00DA', u'\u1009')  # nyalay
+    output = re.sub(u'[\u006E\u00F1]', u'\u100A', output) #nya
     output = output.replace(u'\u0023', u'\u100B') #tatalingyake
     output = output.replace(u'\u0058', u'\u100C') #htawinbal
     output = output.replace(u'\u0021', u'\u100D') #dayinkauk
@@ -23,34 +23,34 @@ def replace(input):
     output = output.replace(u'\u0077', u'\u1010') #tawinpu
     output = output.replace(u'\u0078', u'\u1011') #htasinhtoo
     output = output.replace(u'\u0027', u'\u1012') #dadway
-    output = output.replace(u'\u0065', u'\u1014') #nange
+    output = output.replace(u'\u0022', u'\u1013') #daautchint
+    output = re.sub(u'[\u0045\u0065]', u'\u1014', output) #nange
     output = output.replace(u'\u0079', u'\u1015') #pasaut
     output = output.replace(u'\u007A', u'\u1016') #phaoohtok
     output = output.replace(u'\u0041', u'\u1017') #bahtetchint
     output = output.replace(u'\u0062', u'\u1018') #bakone
     output = output.replace(u'\u0072', u'\u1019') #ma
     output = output.replace(u'\u002C', u'\u101A') #yapatlat
-    output = output.replace(u'\u0026', u'\u101B') #yakaut
+    output = re.sub(u'[\u0026\u00BD]', u'\u101B', output) #yakaut
     output = output.replace(u'\u0076', u'\u101C') #la
+    output = output.replace(u'\u0030', u'\u101D') #wa
     output = output.replace(u'\u006F', u'\u101E') #tha
     output = output.replace(u'\u005B', u'\u101F') #ha
     output = output.replace(u'\u0056', u'\u1020') #lagyi
     output = output.replace(u'\u0074', u'\u1021') #ak
+    output = output.replace(u'\u00A3', u'\u1023') #ei(kagyi)
     output = output.replace(u'\u00FE', u'\u1024') #ee
     output = output.replace(u'\u004F', u'\u1025') #ou
     output = output.replace(u'\u007B', u'\u1027') #a
     output = output.replace(u'\u00F3', u'\u103F') #thagyi
-    output = output.replace(u'\u00DA', u'\u1009') #nyalay
     output = output.replace(u'\u00FC', u'\u104C') #hnigh
     output = output.replace(u'\u00ED', u'\u104D') #ywat
-    output = output.replace(u'\u0073', u'\u103B') #yapint
-    output = re.sub(u'[\u0042\u004D\u004E\u0060\u006A\u007E\u00EA]', u'\u103C', output) #yayit
+    output = re.sub(u'[\u0073\u00DF]', u'\u103B', output) #yapint
+    output = re.sub(u'[\u0042\u004D\u004E\u0060\u006A\u007E]', u'\u103C', output) #yayit
     output = output.replace(u'\u0047', u'\u103D') #waswe
-    output = output.replace(u'\u0053', u'\u103E') #hahto
-    output = output.replace(u'\u004B', u'\u102F') #tachaung
-    output = output.replace(u'\u006B', u'\u102F') #tachaung
-    output = output.replace(u'\u004C', u'\u1030') #2chaung
-    output = output.replace(u'\u006C', u'\u1030') #2chaung
+    output = re.sub(u'[\u0053\u00A7]', u'\u103E', output) #hahto
+    output = re.sub(u'[\u004B\u006B]', u'\u102F', output) #tachaung
+    output = re.sub(u'[\u004C\u006C]', u'\u1030', output) #2chaung
     output = output.replace(u'\u0067', u'\u102B') #yaychar
     output = output.replace(u'\u006D', u'\u102C') #yaychar
     output = output.replace(u'\u0064', u'\u102D') #lonegyitin
@@ -63,8 +63,9 @@ def replace(input):
     output = output.replace(u'\u0048', u'\u1036') #thaythaytin
     output = output.replace(u'\u003F', u'\u104A') #pokekalay
     output = output.replace(u'\u002F', u'\u104B') #pokema
-        
-    
+    output = output.replace(u'\u00A4', u'\u104E') #lagaung
+    output = output.replace(u'\u005c', u'\u104f')  #ei
+
     output = output.replace(u'\u0030', u'\u1040') #0
     output = output.replace(u'\u0031', u'\u1041') #1
     output = output.replace(u'\u0032', u'\u1042') #2
@@ -115,6 +116,15 @@ def decompose(input):
     output = re.sub(u'\u00AE', u'\u1039\u1019', output)  # masint
     output = re.sub(u'\u2019', u'\u1039\u101C', output)  # lasint
     output = re.sub(u'\u00D7', u'\u100D\u1039\u100D', output)  # tata-2lonesint
+
+    #ngasint
+    output = re.sub(u'([\u1000-\u1021])\u0046', u'\u0046\\1', output)
+    output = re.sub(u'([\u1000-\u1021])\u00D8', u'\u0046\\1\u102D', output)
+    output = re.sub(u'([\u1000-\u1021])\u00D0', u'\u0046\\1\u102E', output)
+    output = re.sub(u'([\u1000-\u1021])\u00F8', u'\u0046\\1\u1036', output)
+    output = re.sub(u'\u0046', u'\u1004\u103A\u1039', output)
+    output = re.sub(u'\u00f0', u'\u102D\u1036', output)
+
 
     return output
 
