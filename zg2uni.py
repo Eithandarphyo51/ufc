@@ -6,7 +6,6 @@ def replace(input):
     # replace each zawgyi code point with equivalent code point in unicode
     output = input
 
-    
     output = output.replace(u'\u106A', u'\u1009') #nyalay
     output = re.sub(u'\u1025(?=[\u103A\u102C])', u'\u1009', output) #nyalay yaychar
     output = re.sub(u'\u106B', u'\u100A', output) #nya
@@ -32,7 +31,7 @@ def decompose(input):
     output = input
 
     #ngasint
-    output = re.sub(u'([\u1000-\u1021])(\u1064)', u'\u1064\\1', output)
+    output = re.sub(u'([\u1000-\u1021])\u1064', u'\u1064\\1', output)
     output = re.sub(u'([\u1000-\u1021])(\u108B)', u'\u1064\\1\u102D', output)
     output = re.sub(u'([\u1000-\u1021])(\u108c)', u'\u1064\\1\u102E', output)
     output = re.sub(u'([\u1000-\u1021])(\u108D)', u'\u1064\\1\u1036', output)
@@ -50,50 +49,49 @@ def decompose(input):
     output = re.sub(u'\u1062', u'\u1039\u1002', output)#gasint
     output = re.sub(u'\u1063', u'\u1039\u1003', output)#gagyisint
     output = re.sub(u'\u1065', u'\u1039\u1005', output)#sasint
-    output = re.sub(u'\u1066\u1067', u'\u1039\u1006', output)#salainsint
+    output = re.sub(u'\u1066', u'\u1039\u1006', output)#salainsint
     output = re.sub(u'\u1068', u'\u1039\u1007', output)#zasint
     output = re.sub(u'\u1069', u'\u1039\u1008', output)#zamyinzwesint
-    output = re.sub(u'\u106C', u'\u1039\u100B', output)#tatasint
-    output = re.sub(u'\u106D', u'\u1039\u100C', output)#htatwinsint
+    output = re.sub(u'\u106C', u'\u1039\u100B', output)#tatalingyakesint
+    output = re.sub(u'\u106D', u'\u1039\u100C', output)#htatwinbaesint
     output = re.sub(u'\u1070', u'\u1039\u100F', output)#nagyisint
-    output = re.sub(u'\u1071\u1072', u'\u1039\u1010', output)#tasint
-    output = re.sub(u'\u1073\u1074', u'\u1039\u1011', output)#htasint
+    output = re.sub(u'\u1071', u'\u1039\u1010', output)#tasint
+    output = re.sub(u'\u1073', u'\u1039\u1011', output)#htasint
     output = re.sub(u'\u1075', u'\u1039\u1012', output)#dasint
-    output = re.sub(u'\u1076', u'\u1039\u1013', output)#dachintsint
+    output = re.sub(u'\u1076', u'\u1039\u1013', output)#daautchintsint
     output = re.sub(u'\u1077', u'\u1039\u1014', output)#nasint
     output = re.sub(u'\u1078', u'\u1039\u1015', output)#pasint
     output = re.sub(u'\u1079', u'\u1039\u1016', output)#phasint
-    output = re.sub(u'\u107A', u'\u1039\u1017', output)#bachintsint
-    output = re.sub(u'\u107B', u'\u1039\u1018', output)#basint
+    output = re.sub(u'\u107A', u'\u1039\u1017', output)#bahtetchintsint
+    output = re.sub(u'\u107B', u'\u1039\u1018', output)#bakonesint
     output = re.sub(u'\u107C', u'\u1039\u1019', output)#masint
     output = re.sub(u'\u1085', u'\u1039\u101C', output)#lasint
     output = re.sub(u'\u106E', u'\u100D\u1039\u100D', output)#tata-2lonesint
-    output = re.sub(u'\u106F', u'\u100E\u1039\u100D', output)#dayin_tasint
+    output = re.sub(u'\u106F', u'\u100E\u1039\u100D', output)#dayinmote_tatalinsint
     output = re.sub(u'\u1091', u'\u100F\u1039\u100D', output)#nagyi_dayinkaut_sint
     output = re.sub(u'\u1092', u'\u100B\u1039\u100C', output)
     output = re.sub(u'\u1097', u'\u100B\u1039\u100B', output)
 
     return output
 
-def visual2logical(input):
 
+def visual2logical(input):
+    # reorder the sequence of characters from visual to logical
     output = input
-    # reorder yayit to CMV format
-    output = re.sub(u'(\u103C)([\u1000-\u1021])', u'\2\\1', output)
+
+    #reorder yayit to CMV format
+    output = re.sub(u'(\u103C)([\u1000-\u1020])', u'\\2\\1', output)
+
     # reorder thawayhtoo
-    output = re.sub(u'(\u1031)([\u1000-\u1021])', u'\1\\u1031', output)
-    output = re.sub(u'(\u1031)([\u103B-\u103E\+])', u'\1\\u1031', output)
-    output = re.sub(u'(\u102F)(\u102D\u102E])', u'\2\\1', output)
-    output = re.sub(u'(\u1030)(\u102D\u102E])', u'\2\\1', output)
+    output = re.sub(u'\u1031([\u1000-\u1021])', u'\\1\u1031', output)
+    output = re.sub(u'\u1031([\u103B-\u103E\+])', u'\\1\u1031', output)
 
     return output
-
 
 
 def convert(input):
 
     output = input
-
 
     output = replace(output)
     output = decompose(output)

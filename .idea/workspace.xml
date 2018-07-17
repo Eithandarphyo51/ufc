@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a9586d-f694-4322-aac7-a6006b310843" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/unitozg_resources/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unitozg_resources/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unitozg_resources/uni2zg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/myoutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/myoutput.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/uni.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/z.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unitozg_resources/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/unitozg_resources/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/win2uni_resources/myoutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/win2uni_resources/myoutput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/win2uni_resources/win2uni.py" beforeDir="false" afterPath="$PROJECT_DIR$/win2uni_resources/win2uni.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zg2uni.py" beforeDir="false" afterPath="$PROJECT_DIR$/zg2uni.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,61 +22,44 @@
     <session id="1753267121">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3089" />
+          <entry key="py" value="7385" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3089" />
+          <entry key="Python" value="7385" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="17" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="318" column="109" lean-forward="true" selection-start-line="318" selection-start-column="109" selection-end-line="318" selection-end-column="109" />
-              <folding>
-                <element signature="e#24#39#0" expanded="true" />
-                <marker date="1531039350464" expanded="true" signature="4224:4229" ph="..." />
-                <marker date="1531039350464" expanded="true" signature="4772:4773" ph="..." />
-                <marker date="1531039350464" expanded="true" signature="4772:4777" ph="..." />
-                <marker date="1531039350464" expanded="true" signature="5224:5229" ph="..." />
-                <marker date="1531039350464" expanded="true" signature="13512:13516" ph="..." />
-                <marker date="1531039350464" expanded="true" signature="17640:17645" ph="..." />
-                <marker date="1531039350464" expanded="true" signature="26517:26522" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zg2uni.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="84" column="58" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
+            <state relative-caret-position="242">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/win2uni_resources/win2uni.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="327">
+              <caret line="138" column="34" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -83,9 +68,55 @@
         <entry file="file://$PROJECT_DIR$/unitozg_resources/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <element signature="e#122#135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="25" column="107" lean-forward="true" selection-start-line="25" selection-start-column="107" selection-end-line="25" selection-end-column="107" />
+              <folding>
+                <element signature="e#24#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unitozg_resources/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-135">
+              <caret column="23" lean-forward="true" selection-end-column="23" />
+              <folding>
+                <element signature="e#24#39#0" expanded="true" />
+                <marker date="1531805470260" expanded="true" signature="91:882" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/win2uni_resources/UDHR-WIN.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/win2uni_resources/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,10 +125,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unitozg_resources/uni2zg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="17">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <marker date="1531036941750" expanded="true" signature="544:598" ph="..." />
+                <element signature="e#122#135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,9 +159,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/unitozg_resources/main.py" />
-        <option value="$PROJECT_DIR$/unitozg_resources/uni2zg.py" />
-        <option value="$PROJECT_DIR$/zg2uni.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/zg2uni.py" />
+        <option value="$PROJECT_DIR$/unitozg_resources/uni2zg.py" />
+        <option value="$PROJECT_DIR$/win2uni_resources/win2uni.py" />
+        <option value="$PROJECT_DIR$/unitozg_resources/test.py" />
+        <option value="$PROJECT_DIR$/win2uni_resources/test.py" />
       </list>
     </option>
   </component>
@@ -132,8 +175,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="276" />
+    <option name="y" value="58" />
     <option name="width" value="845" />
-    <option name="height" value="521" />
+    <option name="height" value="501" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -157,6 +202,11 @@
               <item name="ufc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ufc" type="462c0819:PsiDirectoryNode" />
               <item name="unitozg_resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ufc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ufc" type="462c0819:PsiDirectoryNode" />
+              <item name="win2uni_resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,16 +273,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1317" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1318" height="784" extended-state="7" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11415168" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18046875" />
       <window_info id="Structure" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" visible="true" weight="0.03686636" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50703126" side_tool="true" visible="true" weight="0.14746544" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49296874" visible="true" weight="0.14746544" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="6" />
@@ -270,53 +319,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unitozg_resources/unitozg.py" />
+    <entry file="file://$PROJECT_DIR$/main2.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unitozg_resources/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#122#135#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zg2uni.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unitozg_resources/myoutput.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unitozg_resources/UDHR-UNI.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/unitozg_resources/uni2zg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win2uni_resources/win2uni.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="138" column="34" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unitozg_resources/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
-            <marker date="1531036941750" expanded="true" signature="544:598" ph="..." />
+            <element signature="e#122#135#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zg2uni.py">
+    <entry file="file://$PROJECT_DIR$/win2uni_resources/UDHR-WIN.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="84" column="58" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
+        <state relative-caret-position="170">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win2uni_resources/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unitozg_resources/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret column="23" lean-forward="true" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1531805470260" expanded="true" signature="91:882" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="318" column="109" lean-forward="true" selection-start-line="318" selection-start-column="109" selection-end-line="318" selection-end-column="109" />
+        <state relative-caret-position="240">
+          <caret line="25" column="107" lean-forward="true" selection-start-line="25" selection-start-column="107" selection-end-line="25" selection-end-column="107" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
-            <marker date="1531039350464" expanded="true" signature="4224:4229" ph="..." />
-            <marker date="1531039350464" expanded="true" signature="4772:4773" ph="..." />
-            <marker date="1531039350464" expanded="true" signature="4772:4777" ph="..." />
-            <marker date="1531039350464" expanded="true" signature="5224:5229" ph="..." />
-            <marker date="1531039350464" expanded="true" signature="13512:13516" ph="..." />
-            <marker date="1531039350464" expanded="true" signature="17640:17645" ph="..." />
-            <marker date="1531039350464" expanded="true" signature="26517:26522" ph="..." />
           </folding>
         </state>
       </provider>

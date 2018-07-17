@@ -91,7 +91,7 @@ def decompose(input):
     output = re.sub(u'\u0052', u'\u103b\u103d', output)  # yapintwaswe
     output = re.sub(u'\u0054', u'\u103d\u103e', output)  # waswehatoe
     output = re.sub(u'\u0057', u'\u103b\u103d\u103e', output)  # yapintwaswehatoe
-    
+
     # patsint
     output = re.sub(u'\u00FA', u'\u1039\u1000', output)  # kasint
     output = re.sub(u'\u00A9', u'\u1039\u1001', output)  # khasint
@@ -118,10 +118,24 @@ def decompose(input):
 
     return output
 
+def visual2logical(input):
+    # reorder the sequence of characters from visual to logical
+    output = input
+
+    #reorder yayit to CMV format
+    output = re.sub(u'(\u103C)([\u1000-\u1020])', u'\\2\\1', output)
+
+    # reorder thawayhtoo
+    output = re.sub(u'\u1031([\u1000-\u1021])', u'\\1\u1031', output)
+    output = re.sub(u'\u1031([\u103B-\u103E\+])', u'\\1\u1031', output)
+
+    return output
+
 
 def convert(input):
     
     output = replace(input)
     output = decompose(output)
+    output = visual2logical(output)
         
     return output
