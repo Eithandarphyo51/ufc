@@ -81,8 +81,8 @@ def replace(input):
 
 
 def precompose(input):
-    output = input
 
+    output = input
     output = re.sub(u'\u1008', u'\u0070\u0073', output)  # za_myin_zwe
     output = re.sub(u'\u1026', u'\u004f\u0044', output)  # oo_with_longgyitinsanke
     output = re.sub(u'\u1029', u'\u006a\u006f', output)  # aww
@@ -131,6 +131,7 @@ def precompose(input):
 
 
 def logical2visual(input):
+
     output = input
 
     # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=tawaetoe 7=nga_tat 8=aumyit 9=yaychar
