@@ -154,33 +154,29 @@ def logical2visual(input):
 def shape(input):
     output = input
 
-    # ya_yit
-    output = re.sub(u'\u103c([\u1000\u1003\u1006\u100f\u1010\u1011\u1018\u101a\u101c\u101e\u101f\u1021])', u'\u004d\\1', output)  # ya_yit_agyi
-    output = re.sub(u'\u103c([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u004e\\1\\2', output)  # yayit with long_gyi_din(sanke)
-    output = re.sub(u'\u004d([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u0042\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
+    output = re.sub(u'\u103c([\u1000\u1003\u1006\u100f\u1010\u1011\u1018\u101a\u101c\u101e\u101f\u1021])', u'\u004d\\1', output)  # yayit_agyi
+    output = re.sub(u'\u103c([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u004e\\1\\2', output)  # yayit with longgyidin/sanke
+    output = re.sub(u'\u004d([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u0042\\1\\2', output)  # yayit_agi with longgyidin/sanke
     output = re.sub(u'\u103c([\u1000-\u1021])(\u103d)', u'\u0060\\1\\2', output)  # yayit with waswe
     output = re.sub(u'\u004d([\u1000-\u1021])(\u103d)', u'\u007e\\1\\2', output)  # yayit_agyi with waswe
 
-    # ta/na_chuang_ngin
-    output = re.sub(u'([\u1000-\u1007])((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1cn with some letters
-    output = re.sub(u'([\u1009-\u100b])((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1cn with some letters
-    output = re.sub(u'([\u100e-\u101f])((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1cn with some letters
-    output = re.sub(u'(\u1021)((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1cn with some letters
-    output = re.sub(u'([\u1000-\u1007])((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2cn with some letters
-    output = re.sub(u'([\u1009-\u100b])((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2cn with some letters
-    output = re.sub(u'([\u100e-\u101f])((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2cn with some letters
-    output = re.sub(u'(\u1021)((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2cn with some letters
-    output = re.sub(u'\u004d([\u1000-\u1021])\u006b', u'\u00ea\\1', output)  # yayit_agyi_with_1cn
-    output = re.sub(u'\u103c([\u1000-\u1021])\u006b', u'\u00fb\\1', output)  # yayit_with_1cn
-    output = re.sub(u'([\u006a\u0042\u004d\u004e\u0060])([\u1000-\u1021])((?:[\u102d\u102e])?)((?:\u0047)?)\u006b', u'\\1\\2\\3\\4\u004b', output)  # 1cn
-    output = re.sub(u'([\u006a\u0042\u004d\u004e\u0060])([\u1000-\u1021])((?:[\u102d\u102e])?)((?:\u0047)?)\u006c', u'\\1\\2\\3\\4\u004c', output)  # 2cn
-    output = re.sub(u'\u1039([\u1000-\u1021])((?:[\u102d\u102e])?)\u006b', u'\u1039\\1\\2\u004b', output)  # 1cn
-    output = re.sub(u'\u1039([\u1000-\u1021])((?:[\u102d\u102e])?)\u006c', u'\u1039\\1\\2\u004c', output)  # 1cn
+    output = re.sub(u'([\u1000-\u1007])((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1chaung with some letters
+    output = re.sub(u'([\u1009-\u100b])((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1chaung with some letters
+    output = re.sub(u'([\u100e-\u101f])((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1chaung with some letters
+    output = re.sub(u'(\u1021)((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1chaung with some letters
+    output = re.sub(u'([\u1000-\u1007])((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2chaung with some letters
+    output = re.sub(u'([\u1009-\u100b])((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2chaung with some letters
+    output = re.sub(u'([\u100e-\u101f])((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2chaung with some letters
+    output = re.sub(u'(\u1021)((?:[\u102d\u102e])?)((?:\u103e)?)\u1030', u'\\1\\2\\3\u006c', output)  # 2chaung with some letters
+    output = re.sub(u'\u004d([\u1000-\u1021])\u006b', u'\u00ea\\1', output)  # yayit_agyi_with_1chaung
+    output = re.sub(u'\u103c([\u1000-\u1021])\u006b', u'\u00fb\\1', output)  # yayit_with_1chaung
+    output = re.sub(u'([\u006a\u0042\u004d\u004e\u0060])([\u1000-\u1021])((?:[\u102d\u102e])?)((?:\u0047)?)\u006b', u'\\1\\2\\3\\4\u004b', output)  # 1chaung
+    output = re.sub(u'([\u006a\u0042\u004d\u004e\u0060])([\u1000-\u1021])((?:[\u102d\u102e])?)((?:\u0047)?)\u006c', u'\\1\\2\\3\\4\u004c', output)  # 2chaung
+    output = re.sub(u'\u1039([\u1000-\u1021])((?:[\u102d\u102e])?)\u006b', u'\u1039\\1\\2\u004b', output)  # 1chaung
+    output = re.sub(u'\u1039([\u1000-\u1021])((?:[\u102d\u102e])?)\u006c', u'\u1039\\1\\2\u004c', output)  # 1chaung
 
-    # hatoe
     output = re.sub(u'\u100a\u103e', u'\u100a\u00a7', output)  # nya with hatoe
 
-    # oo
     output = re.sub(u'\u1009(\u103a)', u'\u1025\\1', output)  # nyapyat_to_oo
 
     # nag_nge_apyat
@@ -195,8 +191,7 @@ def shape(input):
     # yaguat
     output = re.sub(u'\u101b((?:[\u102d\u102e\u1032])?)([\u102f\u1030\u103d\u006b\u006c])', u'\u00bd\\1\\2', output)
 
-    # nya
-    output = re.sub(u'\u100a(\u103d\u103e)', u'\u00f1\\1', output)  # with waswe_hatoe
+    output = re.sub(u'\u100a(\u103d\u103e)', u'\u00f1\\1', output)  # nya with waswe_hatoe
 
     return output
 

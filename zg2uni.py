@@ -40,7 +40,7 @@ def decompose(input):
     output = re.sub(u'\u105a', u'\u102b\u103a', output)  # yaycha_shayhtoe
     output = re.sub(u'\u108a', u'\u103d\u103e', output)  # waswe_hatoe
 
-    # pr_sint
+    # 2lone_sint
     output = re.sub(u'\u1060', u'\u1039\u1000', output)  # kagyi
     output = re.sub(u'\u1061', u'\u1039\u1001', output)  # kakway
     output = re.sub(u'\u1062', u'\u1039\u1002', output)  # gange
@@ -75,15 +75,15 @@ def decompose(input):
 def visual2logical(input):
     # reorder the sequence of characters from visual to logical
     output = input
-    ## 1=tawaetoe 2=yayit 3=nga_sint 4=letter 5=pr_sint 6=yapint 7=waswe 8=hatoe 9=aumyit 10=yaychar
-    output = re.sub(
-        u'((?:\u1031)?)((?:\u103c)?)((?:\u1064)?)([\u1000-\u1021])((?:\u1039[\u1000-\u1021])?)((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)',
-        '\\3\\4\\5\\2\\6\\7\\8\\1\\9\\10', output)
-    ## for ta/na_chuangngin and longgyitin(sanke)
-    output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
-    output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
 
-    output = re.sub(u'\u1064', u'\u1004\u103a\u1039', output)
+    output = re.sub(u'((?:\u1031)?)((?:\u103C)?)([\u1000-\u1021])((?:\u103B)?)((?:\u103D)?)((?:\u103E)?)((?:\u1037)?)'
+                    u'((?:\u102C)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
+    # 1=thawayhto, 2=waswe, 3=letters, 4=yayit, 5=hahto, 6=patsint, 7=autmyit, 8=yaychar
+
+    output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output) #tachaung_lonegyitin/sanke
+    output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output) #nachaung_lonegyitin/sanke
+
+    output = re.sub(u'\u1064', u'\u1004\u103a\u1039', output) #ngathat
 
     return output
 

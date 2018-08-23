@@ -89,7 +89,7 @@ def decompose(input):
     output = input
 
     output = re.sub(u'\u003a', u'\u102b\u103a', output)  # yaychar_shayhtoe
-    output = output.replace(u'\u0024', u'\u1000\u103b\u1015\u103a')  # kyat_sign
+    output = output.replace(u'\u0024', u'\u1000\u103b\u1015\u103A')  # kyat
     output = re.sub(u'[\u003c\u003e]', u'\u103c\u103d', output)  # yayit_waswe
     output = re.sub(u'\u0040', u'\u100f\u1039\u100d', output)  # nagyi_sint_tawenbae
     output = re.sub(u'\u0049', u'\u103e\u102f', output)  # hatoe_1chaungngin
@@ -98,9 +98,9 @@ def decompose(input):
     output = re.sub(u'\u0054', u'\u103d\u103e', output)  # waswe_hatoe
     output = re.sub(u'\u0057', u'\u103b\u103d\u103e', output)  # yapint_waswe_hatoe
     output = output.replace(u'\u007c', u'\u100b\u1039\u100c')  # ttlg_with_twb
-    output = re.sub(u'\u00aa', u'\u103e\u1030', output)  # hatoe_2cn
+    output = re.sub(u'\u00aa', u'\u103e\u1030', output)  # hatoe_2chaungngin
 
-    # pr_sint
+    # 2lone_sint
     output = re.sub(u'\u00a2', u'\u1039\u1003', output)  # gagyi
     output = re.sub(u'\u00a5', u'\u100b\u1039\u100b', output)  # twice_ttlg
     output = re.sub(u'\u00a6', u'\u1039\u1011', output)  # htasinhtoo
@@ -145,8 +145,8 @@ def visual2logical(input):
     output = input
     ## 1=tawaetoe 2=yayit 3=letter 4=yapint 5=waswe 6=hatoe 7=aumyit 8=yaychar
     output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
-    output = re.sub(u'\u00fb([\u1000-\u1021])', u"\\1\u103c\u102f", output)  # yayit_1cn
-    output = re.sub(u'\u00ea([\u1000-\u1021])', u'\\1\u103c\u102f', output)  # yayit_1cn
+    output = re.sub(u'\u00fb([\u1000-\u1021])', u"\\1\u103c\u102f", output)  # yayit_1chaung
+    output = re.sub(u'\u00ea([\u1000-\u1021])', u'\\1\u103c\u102f', output)  # yayit_1chaung
 
     return output
 
